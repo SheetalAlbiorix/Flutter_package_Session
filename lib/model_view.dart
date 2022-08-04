@@ -5,10 +5,10 @@ class DemoView extends StatefulWidget {
   const DemoView({Key? key}) : super(key: key);
 
   @override
-  _DemoViewState createState() => _DemoViewState();
+  DemoViewState createState() => DemoViewState();
 }
 
-class _DemoViewState extends State<DemoView> {
+class DemoViewState extends State<DemoView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +22,7 @@ class _DemoViewState extends State<DemoView> {
         src: 'https://modelviewer.dev/shared-assets/models/Astronaut.glb',
         alt: "A 3D model of an table soccer",
         autoPlay: true,
-        autoRotate: true,
+        autoRotate: false,
         cameraControls: true,
       ),
     );

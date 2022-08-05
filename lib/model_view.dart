@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:model_viewer/model_viewer.dart';
+import 'package:flutter/material.dart';
 
 class DemoView extends StatefulWidget {
   const DemoView({Key? key}) : super(key: key);
@@ -9,6 +9,8 @@ class DemoView extends StatefulWidget {
 }
 
 class DemoViewState extends State<DemoView> {
+  var Xyz;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +24,7 @@ class DemoViewState extends State<DemoView> {
         src: 'https://modelviewer.dev/shared-assets/models/Astronaut.glb',
         alt: "A 3D model of an table soccer",
         autoPlay: true,
-        autoRotate: false,
+        autoRotate: true,
         cameraControls: true,
       ),
     );

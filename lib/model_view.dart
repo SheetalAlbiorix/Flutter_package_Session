@@ -15,7 +15,7 @@ class DemoViewState extends State<DemoView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flutter Model Viewer Demo"),
+        title: Text('Flutter Model Viewer Demo'),
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
       ),
